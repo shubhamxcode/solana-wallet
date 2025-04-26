@@ -23,15 +23,9 @@ function solanawrapper(){
   return(
     <walletAdapterReact.ConnectionProvider endpoint={endpoint}>
     <walletAdapterReact.WalletProvider wallets={wallets} autoConnect>
-      <WalletModalProvider>
-        <Sol />
-      </WalletModalProvider> <walletAdapterReact.ConnectionProvider endpoint={endpoint}>
-      <walletAdapterReact.WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <Sol />
         </WalletModalProvider>
-      </walletAdapterReact.WalletProvider>
-    </walletAdapterReact.ConnectionProvider>
     </walletAdapterReact.WalletProvider>
   </walletAdapterReact.ConnectionProvider>
   )
@@ -56,7 +50,6 @@ function Sol() {
 
   return (
     <>
-     
             <main className="min-h-screen text-white bg-black">
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 p-4 ">
                 <div className="col-span-1 lg:col-start-2 lg:col-end-4 rounded-lg bg-[#2a302f] h-60 p-4">
