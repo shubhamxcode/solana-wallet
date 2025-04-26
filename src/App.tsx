@@ -3,6 +3,7 @@ import './App.css'
 import Home from '../src/components/Home/Home'
 import Layout from "./layout";
 import Wallet from '../src/components/wallet/sol'
+
 function App() {
 
   return (
