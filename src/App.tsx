@@ -3,7 +3,7 @@ import './App.css'
 import Home from '../src/components/Home/Home'
 import Layout from "./layout";
 import Wallet from '../src/components/wallet/sol'
-import Foucet from './components/Foucet/foucet';
+import Foucet from './components/Foucet/sendsol';
 function App() {
 
   return (
