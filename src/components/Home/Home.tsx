@@ -13,7 +13,7 @@ const cardData = [
     title: "Faucet",
     description:
       "You will build a SOLfoucet that you will use to fund Your Phnatom Browser wallet.",
-    link: "/faucet",
+    link: "/fund",
   },
   {
     id: "03",

@@ -4,7 +4,7 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import * as web3 from "@solana/web3.js";
 import { ExternalLinkIcon } from '@heroicons/react/outline';
 
-function foucet() {
+function Sendsol() {
   const [account, setaccount] = useState("");
   const [amount, setamount] = useState(0);
   const [balance, setbalance] = useState(0);
@@ -30,6 +30,7 @@ function foucet() {
     //add instruction to transaction
     transaction.add(instruction);
     //contain the code u want to perform
+
 
     try {
       const signature = await sendTransaction(transaction, connection);
@@ -68,7 +69,7 @@ function foucet() {
   ];
   return (
     <>
-      <main className="min-h-screen text-white max-w-7xl">
+      <main className="text-white max-w-7xl">
         <section className="grid grid-cols-1 sm:grid-cols-6 gap-4 p-4">
           <form
             action=""
@@ -104,7 +105,7 @@ function foucet() {
                            min={0}
                            placeholder='Amount of SOL'
                            className='text-[#9e80ff] py-1 w-full bg-transparent outline-none resize-none border-2 border-transparent border-b-white'
-                           onChange={event => setamount(event.target.value)}
+                           onChange={event => setamount(Number(event.target.value))}
                         />
                     </div>
                     <div className='text-sm font-semibold mt-8 bg-[#222524] border-2 border-gray-500 rounded-lg p-2'>
@@ -137,4 +138,4 @@ function foucet() {
   );
 }
 
-export default foucet;
+export default Sendsol;

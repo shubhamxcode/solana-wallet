@@ -3,7 +3,7 @@ import './App.css'
 import Home from '../src/components/Home/Home'
 import Layout from "./layout";
 import Wallet from '../src/components/wallet/sol'
-import Foucet from './components/Foucet/sendsol';
+import Fund from './components/Foucet/foucet';
 function App() {
 
   return (
@@ -11,7 +11,7 @@ function App() {
     <Route path="/" element={<Layout/>}>
       <Route index element={<Home/>}/>
       <Route path='/connectwallet' element={<Wallet/>}/>
-      <Route path='/faucet' element={<Foucet/>}/>
+      <Route path='/fund' element={<Fund/>}/>
     </Route>
    </Routes>
   )

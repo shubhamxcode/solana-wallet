@@ -19,7 +19,10 @@ import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 
 function solanawrapper(){
   const endpoint = web3.clusterApiUrl("devnet");
-  const wallets = [new walletAdapterWallets.PhantomWalletAdapter()];
+  const wallets = [
+    new 
+    walletAdapterWallets.PhantomWalletAdapter(),
+  ];
   return(
     <walletAdapterReact.ConnectionProvider endpoint={endpoint}>
     <walletAdapterReact.WalletProvider wallets={wallets} autoConnect>
