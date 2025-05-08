@@ -17,10 +17,10 @@ const cardData = [
   },
   {
     id: "03",
-    title: "programs",
+    title: "sendsol",
     description:
-      "Understand how to deploy and interact with Solana smart contracts (programs).",
-    link: "/programs",
+      "Learn how to send SOL between wallets using Solana's transaction system.",
+    link: "/sendsol",
   },
   {
     id: "04",

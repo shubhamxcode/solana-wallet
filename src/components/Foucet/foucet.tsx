@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import * as web3 from "@solana/web3.js";
 import { ExternalLinkIcon } from "@heroicons/react/outline";
-import Button from "../reuseablebutton/button";
+
 
 function Fund() {
   const [txsig, settxsig] = useState("");
@@ -55,7 +55,7 @@ function Fund() {
     },
   ];
   return (
-    <main className='max-w-7xl grid grid-cols-1 sm:grid-cols-6 gap-4 p-4 text-white'>
+    <main className='bg-black max-w-full h-screen grid grid-cols-1 sm:grid-cols-6 gap-4 p-4 text-white'>
             <form onSubmit={event => fundwallet(event)} className='rounded-lg min-h-content bg-[#2a302f] p-4 sm:col-span-6 lg:col-start-2 lg:col-end-6'>
                 <div className='flex justify-between items-center'>
                     <h2 className='text-lg sm:text-2xl font-semibold'>
@@ -63,11 +63,10 @@ function Fund() {
                     </h2>
                     <button
                         type='submit'
-                        className='bg-helius-orange rounded-lg py-1 sm:py-2 px-4 font-semibold transition-all duration-200 border-2 border-transparent hover:border-helius-orange disabled:opacity-50 disabled:hover:bg-[#fa6ece] hover:bg-transparent disabled:cursor-not-allowed'
+                        className='bg-orange-600 p-2 rounded-xl cursor-pointer'
                     >
                         Fund
                     </button>
-                    <Button/>
                 </div>
                 
                 <div className='text-sm font-semibold mt-8 bg-[#222524] border-2 border-gray-500 rounded-lg p-2'>

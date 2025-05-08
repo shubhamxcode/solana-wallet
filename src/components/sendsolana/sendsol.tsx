@@ -69,7 +69,7 @@ function Sendsol() {
   ];
   return (
     <>
-      <main className="text-white max-w-7xl">
+      <main className="text-white bg-black h-screen">
         <section className="grid grid-cols-1 sm:grid-cols-6 gap-4 p-4">
           <form
             action=""
